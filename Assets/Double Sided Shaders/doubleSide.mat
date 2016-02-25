@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: materialOuter
-  m_Shader: {fileID: 4800000, guid: ca3c461c9a3944745a55d9ca6e6cb5e6, type: 3}
+  m_Name: doubleSide
+  m_Shader: {fileID: 4800000, guid: 102ae67d75d24bf49b90cba8fedb7360, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: 3000
@@ -19,12 +19,19 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 1451eaddde3f8304ca8c4c5a4242e657, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NormalMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -78,6 +85,20 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DiffuseMapTransA
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecularMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -91,14 +112,6 @@ Material:
         first:
           name: _Cutoff
         second: 0.5
-      data:
-        first:
-          name: _VisibleDistance
-        second: 3
-      data:
-        first:
-          name: _OutlineWidth
-        second: 0
       data:
         first:
           name: _Parallax
@@ -135,6 +148,22 @@ Material:
         first:
           name: _Metallic
         second: 0
+      data:
+        first:
+          name: _NormalIntensity
+        second: 1
+      data:
+        first:
+          name: _SpecIntensity
+        second: 1
+      data:
+        first:
+          name: _Gloss
+        second: 0.5
+      data:
+        first:
+          name: _Transparency
+        second: 0.5
     m_Colors:
       data:
         first:
@@ -146,9 +175,9 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _PlayerPosition
-        second: {r: 3.1310368, g: 1.0500001, b: 2.765075, a: 0}
+          name: _Diffusecolor
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _OutlineColour
-        second: {r: 1, g: 1, b: 0, a: 1}
+          name: _Speccolor
+        second: {r: 1, g: 1, b: 1, a: 1}

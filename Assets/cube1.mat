@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: materialOuter
-  m_Shader: {fileID: 4800000, guid: ca3c461c9a3944745a55d9ca6e6cb5e6, type: 3}
+  m_Name: cube1
+  m_Shader: {fileID: 4800000, guid: e1d98019e19367a4f83cd60c767c7751, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: 3000
@@ -19,7 +19,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 1451eaddde3f8304ca8c4c5a4242e657, type: 3}
+          m_Texture: {fileID: 2800000, guid: 945b757444f56ea4d8765d2aaf5a761d, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
