@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ProximityXray : MonoBehaviour
+public class TransformProximity : MonoBehaviour
 {
 
     public Transform player;

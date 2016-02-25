@@ -19,7 +19,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: e036868503c373f4e88f20a8798780e6, type: 3}
+          m_Texture: {fileID: 2800000, guid: 446f8f50101eb2e458e55fbbd0e36f42, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -147,7 +147,7 @@ Material:
       data:
         first:
           name: _PlayerPosition
-        second: {r: 3.1310368, g: 1.0500001, b: 2.765075, a: 0}
+        second: {r: 0.06251216, g: 1.0500001, b: -0.40466318, a: 0}
       data:
         first:
           name: _OutlineColour

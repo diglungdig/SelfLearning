@@ -17,7 +17,7 @@
 #pragma fragment frag
 
 		// Access the shaderlab properties
-		uniform sampler2D _MainTex;
+	uniform sampler2D _MainTex;
 	uniform float4 _PlayerPosition;
 	uniform float _VisibleDistance;
 	uniform float _OutlineWidth;
