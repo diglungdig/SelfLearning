@@ -45,6 +45,20 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _DiffuseMapTransA
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecularMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _EmissionMap
         second:
           m_Texture: {fileID: 0}
@@ -85,20 +99,6 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _DiffuseMapTransA
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _SpecularMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -112,6 +112,22 @@ Material:
         first:
           name: _Cutoff
         second: 0.5
+      data:
+        first:
+          name: _NormalIntensity
+        second: 1
+      data:
+        first:
+          name: _SpecIntensity
+        second: 1.085
+      data:
+        first:
+          name: _Gloss
+        second: 0.467
+      data:
+        first:
+          name: _Transparency
+        second: 0.064
       data:
         first:
           name: _Parallax
@@ -148,22 +164,6 @@ Material:
         first:
           name: _Metallic
         second: 0
-      data:
-        first:
-          name: _NormalIntensity
-        second: 1
-      data:
-        first:
-          name: _SpecIntensity
-        second: 1
-      data:
-        first:
-          name: _Gloss
-        second: 0.5
-      data:
-        first:
-          name: _Transparency
-        second: 0.5
     m_Colors:
       data:
         first:
