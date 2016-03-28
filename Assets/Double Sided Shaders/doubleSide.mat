@@ -45,9 +45,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _DiffuseMapTransA
+          name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DiffuseMapTransA
+        second:
+          m_Texture: {fileID: 2800000, guid: 1810786a521db2c4391ef54218a6d09a, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -59,14 +66,35 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _EmissionMap
+          name: _DiffuseMapCutoutA
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ParallaxMap
+          name: _DiffuseMapSpecA
+        second:
+          m_Texture: {fileID: 2800000, guid: 1810786a521db2c4391ef54218a6d09a, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DiffuseMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -81,13 +109,6 @@ Material:
       data:
         first:
           name: _DetailAlbedoMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _OcclusionMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -114,24 +135,28 @@ Material:
         second: 0.5
       data:
         first:
+          name: _Parallax
+        second: 0.02
+      data:
+        first:
           name: _NormalIntensity
         second: 1
       data:
         first:
           name: _SpecIntensity
-        second: 1.085
+        second: 1.176
       data:
         first:
           name: _Gloss
-        second: 0.467
+        second: 0.681
       data:
         first:
           name: _Transparency
-        second: 0.064
+        second: 0.56
       data:
         first:
-          name: _Parallax
-        second: 0.02
+          name: _EmissiveIntensity
+        second: 0.01
       data:
         first:
           name: _ZWrite
@@ -176,7 +201,7 @@ Material:
       data:
         first:
           name: _Diffusecolor
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: 1, g: 0.9632353, b: 0.9632353, a: 1}
       data:
         first:
           name: _Speccolor

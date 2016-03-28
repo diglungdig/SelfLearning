@@ -38,14 +38,21 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _EmissionMap
+          name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ParallaxMap
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -60,13 +67,6 @@ Material:
       data:
         first:
           name: _DetailAlbedoMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _OcclusionMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -93,16 +93,16 @@ Material:
         second: 0.5
       data:
         first:
+          name: _Parallax
+        second: 0.02
+      data:
+        first:
           name: _VisibleDistance
         second: 3
       data:
         first:
           name: _OutlineWidth
         second: 0
-      data:
-        first:
-          name: _Parallax
-        second: 0.02
       data:
         first:
           name: _ZWrite
@@ -147,7 +147,7 @@ Material:
       data:
         first:
           name: _PlayerPosition
-        second: {r: 3.3292065, g: 1.0500001, b: 1.7149248, a: 0}
+        second: {r: 1.9052212, g: 1.0500001, b: -5.0081987, a: 0}
       data:
         first:
           name: _OutlineColour
