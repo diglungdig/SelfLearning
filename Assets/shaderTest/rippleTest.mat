@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: New Material
-  m_Shader: {fileID: 4800000, guid: e1d98019e19367a4f83cd60c767c7751, type: 3}
+  m_Name: rippleTest
+  m_Shader: {fileID: 4800000, guid: c2d1a30bd04dcaa4dbad51748c8f4697, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -19,7 +19,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 1f79821ac58a20e4b8e903419103fe4e, type: 3}
+          m_Texture: {fileID: 2800000, guid: 48ae371e0cdb9c04e999c03d44923121, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -78,7 +78,18 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: b995d4bd9d11078d11005b9844295342, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
+      data:
+        first:
+          name: _Scale
+        second: 0.49
       data:
         first:
           name: _SrcBlend
@@ -97,20 +108,12 @@ Material:
         second: 0.02
       data:
         first:
-          name: _VisibleDistance
-        second: 3
-      data:
-        first:
-          name: _OutlineWidth
-        second: 0
-      data:
-        first:
           name: _ZWrite
         second: 1
       data:
         first:
           name: _Glossiness
-        second: 0.5
+        second: 0.052
       data:
         first:
           name: _BumpScale
@@ -134,7 +137,19 @@ Material:
       data:
         first:
           name: _Metallic
-        second: 0
+        second: 0.345
+      data:
+        first:
+          name: _Speed
+        second: 3.37
+      data:
+        first:
+          name: _Frequency
+        second: 0.79
+      data:
+        first:
+          name: _Amount
+        second: 1
     m_Colors:
       data:
         first:
@@ -143,12 +158,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _PlayerPosition
-        second: {r: 4.536617, g: 1.0500001, b: -2.8424628, a: 0}
-      data:
-        first:
-          name: _OutlineColour
-        second: {r: 1, g: 1, b: 0, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 0}

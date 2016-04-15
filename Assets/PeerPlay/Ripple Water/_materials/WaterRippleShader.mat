@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WaterRippleShader
+  m_Shader: {fileID: 4800000, guid: 5373b09c4ba9e624aaf92758d980c7bb, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Scale
+        second: 0.1
+      data:
+        first:
+          name: _Glossiness
+        second: 0.837
+      data:
+        first:
+          name: _Metallic
+        second: 1
+      data:
+        first:
+          name: _Speed
+        second: -6.1
+      data:
+        first:
+          name: _Frequency
+        second: 0.47
+      data:
+        first:
+          name: _WaveAmplitude1
+        second: 0
+      data:
+        first:
+          name: _WaveAmplitude2
+        second: 0
+      data:
+        first:
+          name: _WaveAmplitude3
+        second: 0
+      data:
+        first:
+          name: _WaveAmplitude4
+        second: 0
+      data:
+        first:
+          name: _WaveAmplitude5
+        second: 0
+      data:
+        first:
+          name: _WaveAmplitude6
+        second: 0
+      data:
+        first:
+          name: _WaveAmplitude7
+        second: 0
+      data:
+        first:
+          name: _WaveAmplitude8
+        second: 0
+      data:
+        first:
+          name: _xImpact1
+        second: 0
+      data:
+        first:
+          name: _zImpact1
+        second: 0
+      data:
+        first:
+          name: _xImpact2
+        second: 0
+      data:
+        first:
+          name: _zImpact2
+        second: 0
+      data:
+        first:
+          name: _xImpact3
+        second: 0
+      data:
+        first:
+          name: _zImpact3
+        second: 0
+      data:
+        first:
+          name: _xImpact4
+        second: 0
+      data:
+        first:
+          name: _zImpact4
+        second: 0
+      data:
+        first:
+          name: _xImpact5
+        second: 0
+      data:
+        first:
+          name: _zImpact5
+        second: 0
+      data:
+        first:
+          name: _xImpact6
+        second: 0
+      data:
+        first:
+          name: _zImpact6
+        second: 0
+      data:
+        first:
+          name: _xImpact7
+        second: 0
+      data:
+        first:
+          name: _zImpact7
+        second: 0
+      data:
+        first:
+          name: _xImpact8
+        second: 0
+      data:
+        first:
+          name: _zImpact8
+        second: 0
+      data:
+        first:
+          name: _Distance1
+        second: 0
+      data:
+        first:
+          name: _Distance2
+        second: 0
+      data:
+        first:
+          name: _Distance3
+        second: 0
+      data:
+        first:
+          name: _Distance4
+        second: 0
+      data:
+        first:
+          name: _Distance5
+        second: 0
+      data:
+        first:
+          name: _Distance6
+        second: 0
+      data:
+        first:
+          name: _Distance7
+        second: 0
+      data:
+        first:
+          name: _Distance8
+        second: 0
+      data:
+        first:
+          name: _Amount
+        second: 0.07
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 0.665}
