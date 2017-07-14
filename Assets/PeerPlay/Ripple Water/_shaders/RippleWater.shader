@@ -1,4 +1,6 @@
-﻿Shader "Custom/RippleWater" {
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
+Shader "Custom/RippleWater" {
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 		_Color ("Color", Color) = (1,1,1,1)
@@ -83,7 +85,7 @@
 		half value7 = _Scale * sin(_Time.w * _Speed * _Frequency + offsetvert + (v.vertex.x * _OffsetX7) + (v.vertex.z * _OffsetZ7)  );
 		half value8 = _Scale * sin(_Time.w * _Speed * _Frequency + offsetvert + (v.vertex.x * _OffsetX8) + (v.vertex.z * _OffsetZ8)  );
 		
-		float3 worldPos = mul(_Object2World, v.vertex).xyz;
+		float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
 		
 		
 		v.vertex.y += value0; //remove for no waves

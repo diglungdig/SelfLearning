@@ -1,4 +1,7 @@
-﻿Shader "Custom/CustomReverseProximity" {
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/CustomReverseProximity" {
 	Properties{
 		_MainTex("Base (RGB)", 2D) = "white" {} // Regular object texture 
 	_PlayerPosition("Player Position", vector) = (0,0,0,0) // The location of the player - will be set by script
@@ -42,8 +45,8 @@
 	vertexOutput vert(vertexInput input)
 	{
 		vertexOutput output;
-		output.pos = mul(UNITY_MATRIX_MVP, input.vertex);
-		output.position_in_world_space = mul(_Object2World, input.vertex);
+		output.pos = UnityObjectToClipPos(input.vertex);
+		output.position_in_world_space = mul(unity_ObjectToWorld, input.vertex);
 		output.tex = input.texcoord;
 		return output;
 	}
@@ -92,8 +95,8 @@
 	v2f vert(float4 vertex : POSITION, float3 normal : NORMAL, float4 tangent : TANGENT, float2 uv : TEXCOORD0)
 	{
 		v2f o;
-		o.pos = mul(UNITY_MATRIX_MVP, vertex);
-		o.worldPos = mul(_Object2World, vertex).xyz;
+		o.pos = UnityObjectToClipPos(vertex);
+		o.worldPos = mul(unity_ObjectToWorld, vertex).xyz;
 		half3 wNormal = UnityObjectToWorldNormal(normal);
 		half3 wTangent = UnityObjectToWorldDir(tangent.xyz);
 		half tangentSign = tangent.w * unity_WorldTransformParams.w;

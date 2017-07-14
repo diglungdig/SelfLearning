@@ -1,4 +1,7 @@
-﻿Shader "Unlit/NewUnlitShader"
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Unlit/NewUnlitShader"
 {
 	Properties{
 		// three textures we'll use in the material
@@ -28,8 +31,8 @@
 			v2f vert(float4 vertex : POSITION, float3 normal : NORMAL, float4 tangent : TANGENT, float2 uv : TEXCOORD0)
 			{
 				v2f o;
-				o.pos = mul(UNITY_MATRIX_MVP, vertex);
-				o.worldPos = mul(_Object2World, vertex).xyz;
+				o.pos = UnityObjectToClipPos(vertex);
+				o.worldPos = mul(unity_ObjectToWorld, vertex).xyz;
 				half3 wNormal = UnityObjectToWorldNormal(normal);
 				half3 wTangent = UnityObjectToWorldDir(tangent.xyz);
 				half tangentSign = tangent.w * unity_WorldTransformParams.w;
