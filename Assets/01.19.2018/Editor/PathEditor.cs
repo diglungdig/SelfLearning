@@ -14,18 +14,33 @@ public class PathEditor : Editor {
         base.OnInspectorGUI();
 
 
+        EditorGUI.BeginChangeCheck();
         if (GUILayout.Button("Create New"))
         {
+            Undo.RecordObject(creator, "Create New");
             creator.CreatePath();
             path = creator.path;
 
-            SceneView.RepaintAll();
         }
 
         if (GUILayout.Button("Toggle closed"))
         {
+            Undo.RecordObject(creator, "Toggle Closed");
             path.ToggleClosed();
 
+  
+        }
+
+        bool autoSetControlPoints = GUILayout.Toggle(path.AutoSetControlPoints, "Auto Set Control Points");
+        if(autoSetControlPoints != path.AutoSetControlPoints)
+        {
+            Undo.RecordObject(creator, "Toggle Auto Set Control");
+            path.AutoSetControlPoints = autoSetControlPoints;
+        }
+
+
+        if (EditorGUI.EndChangeCheck())
+        {
             SceneView.RepaintAll();
         }
     }
