@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ShowInMiniWorld
+  - MiniWorldCamera
+  - VRPlayer
   layers:
   - Default
   - TransparentFX
@@ -13,22 +16,6 @@ TagManager:
   - UI
   - 
   - 
-  - Clickable
-  - Player
-  - NPC
-  - 
-  - 
-  - 
-  - 
-  - 
-  - FXLayer
-  - 
-  - 
-  - 
-  - 
-  - Visible
-  - 
-  - VisibleGame
   - 
   - 
   - 
@@ -37,6 +24,22 @@ TagManager:
   - 
   - 
   - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - HMDOnly
   m_SortingLayers:
   - name: Default
     uniqueID: 0

@@ -7,7 +7,7 @@ using UnityEditor;
 public class PathEditor : Editor {
 
     PathCreator creator;
-    Path path;
+    Pathz path;
 
     public override void OnInspectorGUI()
     {
